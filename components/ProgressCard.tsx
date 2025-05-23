@@ -1,6 +1,11 @@
-import { Card, CardContent, Typography, LinearProgress, Box } from '@mui/material';
+import { Card, CardContent, Typography, Box, LinearProgress } from '@mui/material';
 
-const ProgressCard = ({ label, percent }) => (
+type ProgressCardProps = {
+  label: string;
+  percent: number;
+};
+
+const ProgressCard = ({ label, percent }: ProgressCardProps) => (
   <Card sx={{ my: 2 }}>
     <CardContent>
       <Typography>{label}</Typography>

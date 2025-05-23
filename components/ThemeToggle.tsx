@@ -1,6 +1,11 @@
 import { Box, Switch, Typography } from '@mui/material';
 
-const ThemeToggle = ({ darkMode, setDarkMode }) => {
+type ThemeToggleProps = {
+  darkMode: boolean;
+  setDarkMode: (value: boolean) => void;
+};
+
+const ThemeToggle = ({ darkMode, setDarkMode }: ThemeToggleProps) => {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
       <Switch

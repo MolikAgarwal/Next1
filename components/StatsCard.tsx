@@ -1,6 +1,11 @@
 import { Card, CardContent, Typography } from '@mui/material';
 
-const StatsCard = ({ completed, pending }) => {
+type StatsCardProps = {
+  completed: number;
+  pending: number;
+};
+
+const StatsCard = ({ completed, pending }: StatsCardProps) => {
   const total = completed + pending;
   const percentage = Math.round((completed / total) * 100);
 

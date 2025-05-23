@@ -5,6 +5,7 @@ import GreetingHeader from '../components/GreetingHeader';
 import ThemeToggle from '../components/ThemeToggle';
 import NotesCard from '../components/NotesCard';
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
